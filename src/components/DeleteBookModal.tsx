@@ -64,8 +64,8 @@ const DeleteBookModal: React.FC<DeleteModalProps> = ({
             <DialogTrigger asChild>
                 {triggerButton}
             </DialogTrigger>
-            <DialogContent className="max-w-md">
-                <DialogHeader className="space-y-3">
+            <DialogContent className="w-[95%] sm:max-w-md">
+                <DialogHeader className="space-y-3 w-full">
                     <div className="flex items-center gap-3">
                         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-100">
                             <AlertTriangle className="h-5 w-5 text-red-600" />

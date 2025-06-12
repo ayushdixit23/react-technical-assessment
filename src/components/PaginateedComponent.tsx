@@ -19,7 +19,7 @@ const PaginatedComponent: React.FC<PaginatedComponentProps> = ({
     data,
 }) => {
     return (
-        <div className="mt-6 flex items-center justify-between">
+        <div className="mt-6 flex sm:flex-row flex-col gap-3.5 items-center sm:justify-between">
             <div className="text-sm text-gray-700">
                 Showing {(currentPage - 1) * booksPerPage + 1} to{" "}
                 {Math.min(currentPage * booksPerPage, data.total)} of{" "}

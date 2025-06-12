@@ -96,7 +96,7 @@ const BookFormModal: React.FC<BookFormModalProps> = ({
             <DialogTrigger asChild>
                 {triggerButton}
             </DialogTrigger>
-            <DialogContent className="max-w-md flex flex-col w-full overflow-hidden">
+            <DialogContent className="w-[95%] sm:max-w-md flex flex-col overflow-hidden">
                 <DialogHeader>
                     <DialogTitle>
                         {mode === 'edit' ? 'Edit Book' : 'Add New Book'}

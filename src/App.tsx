@@ -1,9 +1,8 @@
-import "./App.css";
 import BookManagementDashboard from "./components/BookComponent";
 
 function App() {
-return <>
-    <BookManagementDashboard/>
+  return <>
+    <BookManagementDashboard />
   </>
 }
 

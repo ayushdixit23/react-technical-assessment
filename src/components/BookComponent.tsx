@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Plus, BookOpen } from "lucide-react";
-
 import type { Book } from "../types";
 import BookFormModal, { type FormData } from "./BookFormData";
 import { useQuery } from "@tanstack/react-query";
@@ -118,13 +117,13 @@ const BookManagementDashboard: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen w-full bg-gray-50">
+    <div className="min-h-screen w-full bg-gray-50 sm:max-w-[1280px] sm:mx-auto mt-5">
       {/* Header */}
       <header className="rounded-t-lg border-b">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <BookOpen className="h-8 w-8 text-blue-600" />
+              <BookOpen className="h-8 w-8 text-black" />
               <h1 className="ml-3 sm:text-xl font-bold text-gray-900">
                 Book Management Dashboard
               </h1>
@@ -134,7 +133,7 @@ const BookManagementDashboard: React.FC = () => {
               onSubmit={handleAddBook}
               mode="add"
               triggerButton={
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 sm:px-4 py-2 rounded-lg flex items-center sm:space-x-2">
+                <button className="bg-[#222] hover:bg-[#222]/90 text-white px-3 sm:px-4 py-2 rounded-lg flex items-center sm:space-x-2">
                   <Plus className="h-4 w-4" />
                   <span className="hidden sm:block">Add Book</span>
                 </button>
